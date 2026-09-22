@@ -1,52 +1,41 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sistema de caixa</title>
-</head>
-<body>
-    <center>
-    <h1> sistema de caixa </h1>
+        <title>Login</title>
+    </head>
+    <body>
+      <center> 
+      <form id="formulario">
+   <div class="linha"> 
+        <h1>Bem-Vindo de volta!!</h1>
 
-      <form id="caixa">
-    <div>
-    <label for="preco do produto"> preço do produto </label>
-    <input  type="number" id="preco produto">
- </div>
+        <hr>
 
- <div>
-    <label for="quntidade"> quantidade </label>
-    <input type="number" id="quantidade">
-</div>
+        <h3>insira sua senha e login </h3>
 
-<div>
-    <label for="forma de pagamento"> forma de pagamento </label>
-    <input type="text" id="forma de pagamento">
-       <select id="forma de pagamento" required>
-            <option value="">Selecione</option>
-            <option value="dinheiro">dinheiro</option>
-            <option value="pix">pix</option>
-            <option value="cartao">cartão</option>
-        </select>
- </div>
-  <div id="dinheiro">
-            <label for="valor entregue">Valor entregue:</label>
-            <input type="number" id="valor entregue" step="0.01">
-        </div>
+      <div class="linha">
+                <label for="login">Login</label>
+                <input type="text" id="login" required>
+            </div>
+         <br><br>
 
-        <br><br>
+     <div>
+       <label for="senha">Senha</label>
+     <input type="number" id="senha" required>
+     </div>
+     <br><br>
+      
+     
+      <button type="button" onclick="verificarresenhaeLogin()">Enviar</button>
+      <p id="resultado"></p>
 
-        <button type="button">calcular</button>
-
-    </form>
-
-    <div id="resultado"></div>
-
-
-    <script src="script.js"></script>
-    </center>
-</body>
-</html>
+        <button type="reset">Limpar</button>
+   
+     </form>
+          </div>
+        </center>
+        <script src="script.js"></script>
+    </body>
+    </html>
