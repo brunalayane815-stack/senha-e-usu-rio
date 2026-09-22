@@ -1,22 +1,22 @@
-    function verificarresenhaeLogin() {
-    const login = document.getElementById("login").value;
-    const senha = document.getElementById("senha").value;
-  
-  
-let situacao
-const nome = "pompompurin"
+function calcular() {
+    console.log ("preco");
+    console.log("quantidade");
+    console.log("pagamento");
+    console.log("subtotal");
 
-if ( senha == 1234 && login == nome ){
-  situacao =" Acesso liberado!!"
- } else {
-    situacao = "Acesso negado!!";
-  }
-  console.log("situacao")
+    let preco = Number(document.getElementById("preço").value);
+    let quantidade = Number(document.getElementById("quantidade").value);
+    let pagamento = document.getElementById("pagamento").value;
+    let subtotal = preco * quantidade;
+    let desconto = 0;
 
- document.getElementById("login").value
- document.getElementById("senha");
+    if (pagamento == "dinheiro") {
+        desconto = subtotal * 0.10;
+    } else if (pagamento == "pix") {
+        desconto = subtotal * 0.05;
+    }
 
-document.getElementById("resultado").textContent=
- "Situacao:" + situacao
+    let total = subtotal - desconto;
 
+ 
 }
